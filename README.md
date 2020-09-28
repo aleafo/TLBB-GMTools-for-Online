@@ -11,23 +11,23 @@
 
 ### 2.在线管理工具配置
 1.配置`index.php`
-```
-$loginPassworld 你自定义的登陆密码
+```php
+$loginPassworld #你自定义的登陆密码
 
-$privateKey TLBB服务端请求数据时需要验证的KEY，这里也需要自定义
+$privateKey #TLBB服务端请求数据时需要验证的KEY，这里也需要自定义
 
-$dbConfig 在线管理工具数据库，配置看第三部
+$dbConfig #在线管理工具数据库，配置看第三部
 
-$webDbConfig TLBB账号数据库
+$webDbConfig #TLBB账号数据库
 
-$tlbbDbConfig TLBB角色数据库
+$tlbbDbConfig #TLBB角色数据库
 ```
 
 ### 3.在线管理工具数据库配置
-1.创建数据库,数据库名自定义,编码格式 GBK
+1.创建数据库,数据库名自定义,编码格式**GBK**
 
 2.导入数据表
-```
+```sql
 CREATE TABLE `eventlist` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `event` varchar(255) NOT NULL COMMENT '事件标识',
