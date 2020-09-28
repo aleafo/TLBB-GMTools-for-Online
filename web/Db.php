@@ -3,7 +3,6 @@
  * EasyAPI PHP Framework
  * Db操作类 (MYSQL PDO)
  * @author  Wigiesen <[<wigiesen.cn@gmail.com>]>
- * https://xinyu19.com
  */
 
 class Db
