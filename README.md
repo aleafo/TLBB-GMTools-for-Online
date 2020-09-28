@@ -7,4 +7,18 @@
 ## 部署说明
 
 ### 部署条件
-1.需要自行搭建可外部访问的WEB服务器，推荐Nginx+PHP+MySQL组合，确保可以正常执行PHP与数据库连接。
+需要自行搭建可`外部访问的WEB服务器`，推荐`Nginx+PHP+MySQL`组合，确保可以`正常执行PHP`与`数据库连接`。
+
+### 在线管理工具配置
+1.配置`index.php`中 `$loginPassworld`、`$privateKey`、`$dbConfig`、`$webDbConfig`、`$tlbbDbConfig`
+```
+**$loginPassworld** 你自定义的登陆密码
+
+**$privateKey** TLBB服务端请求数据时需要验证的KEY，这里也需要自定义
+
+**$dbConfig** 在线管理工具数据库
+
+**$webDbConfig** TLBB账号数据库
+
+**$tlbbDbConfig** TLBB角色数据库
+```
