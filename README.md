@@ -47,7 +47,7 @@ CREATE TABLE `eventlist` (
 1).版本中引入`XYNS_SecondsTimer.lua`
 ```ini
 ;心语难诉添加秒级心跳脚本
-666898=\NewLua\XYNS_SecondsTimer.lua
+666898=\XYNS_SecondsTimer.lua
 ```
 
 2).在某个场景添加一个NPC，这个NPC作用于计时器脚本，每2秒请求一次
