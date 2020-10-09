@@ -82,7 +82,7 @@ execute("cd /home/tlbb/Server/SecondsTimer;wget -q 'http://你的域名或者IP/
 ```
 4).配置GM工具开关
 
-`ScriptGlobal.lua中`配置`GMDATA_ISOPEN_GMTOOLS`变量，1 = 开启,0 = 关闭
+**ScriptGlobal.lua中**配置**GMDATA_ISOPEN_GMTOOLS**变量，1 = 开启,0 = 关闭
 
 ### 5.重启服务端
 到这一步就已经配置完成，重启服务端后访问`http://你的域名或者IP/index.php`,输入好你设置的密码即可使用TLBB-GM在线管理工具
