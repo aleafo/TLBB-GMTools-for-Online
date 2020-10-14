@@ -1,6 +1,6 @@
 <?php
 session_start();
-header("Content-type: text/html; charset=gb2312");
+header("Content-type: text/html; charset=gbk");
 header("Cache-Control: no-cache");
 header("Pragma: no-cache");
 
@@ -167,8 +167,8 @@ class GmTools
 			'createtime'	=> time(),
 			'requesttime' 	=> time(),
 			'status'		=> 1,
-			'param1'		=> iconv('utf-8', 'gb2312', $userAccount.'@game.sohu.com'),
-			'param2'		=> iconv('utf-8', 'gb2312', $point),
+			'param1'		=> iconv('utf-8', 'gbk', $userAccount.'@game.sohu.com'),
+			'param2'		=> iconv('utf-8', 'gbk', $point),
 			'param3'		=> "·¢·ÅÈË£º{$_SESSION['user']}",
 			'param4'		=> 0,
 		]);
@@ -242,13 +242,13 @@ if (isset($_GET['privateKey']) && !empty($_GET['privateKey'])) {
 			}else{
 				$res = GmTools::addEvent([
 					'event'			=> $_POST['event'],
-					'eventnote'		=> iconv('utf-8', 'gb2312', $_POST['eventnote']),
+					'eventnote'		=> iconv('utf-8', 'gbk', $_POST['eventnote']),
 					'createtime'	=> time(),
 					'status'		=> 0,
-					'param1'		=> iconv('utf-8', 'gb2312', $_POST['param1']),
-					'param2'		=> iconv('utf-8', 'gb2312', $_POST['param2']),
-					'param3'		=> iconv('utf-8', 'gb2312', $_POST['param3']),
-					'param4'		=> iconv('utf-8', 'gb2312', $_POST['param4']),
+					'param1'		=> iconv('utf-8', 'gbk', $_POST['param1']),
+					'param2'		=> iconv('utf-8', 'gbk', $_POST['param2']),
+					'param3'		=> iconv('utf-8', 'gbk', $_POST['param3']),
+					'param4'		=> iconv('utf-8', 'gbk', $_POST['param4']),
 				]);
 			}
 			echo $res;
