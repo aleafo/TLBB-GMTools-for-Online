@@ -101,6 +101,7 @@ class GmTools
         }
 	}
 
+	
 	/**
 	 * [addEvent 添加执行事件]
 	 * @param   [arr]  $data  [事件参数]
